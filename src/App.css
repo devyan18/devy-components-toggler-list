@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.Side-Bar {
+  padding: 10px 0 0 0;
+  background-color: #282C34;
+  height: 100vh;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.Toggler {
+  color: #ABB2BF;
+  width: 240px;
+  height: 30px;
+  padding: 0 0 0 10px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.Toggler > .rotate {
+  transform: rotate(-90deg);
+}
+
+.Toggler:hover {
+  background-color: #383C44;
+  cursor: pointer;
+}
+
+.Toggled {
+  display: none;
+  transition: display 1s ease;
+}
+
+.Toggled.View {
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul > li {
+  color: #ABB2BF;
+  padding: 0 32px;
+  width: 240px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+ul { 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li:hover {
+  background-color: #383C44;
+  cursor: pointer;
+}
